@@ -1,0 +1,31 @@
+while True:
+    nome = input("Digite seu nome: ")
+    if len(nome) > 3:
+        break
+    print("Nome inválido. Digite um nome com mais de 3 caracteres.")
+
+while True:
+    idade = int(input("Digite sua idade: "))
+    if 0 <= idade <= 150:
+        break
+    print("Idade inválida. Digite uma idade entre 0 e 150 anos.")
+
+while True:
+    salario = float(input("Digite seu salário: "))
+    if salario > 0:
+        break
+    print("Salário inválido. Digite um valor maior que zero.")
+
+while True:
+    sexo = input("Digite seu sexo (f/m): ")
+    if sexo == 'f' or sexo == 'm':
+        break
+    print("Sexo inválido. Digite 'f' para feminino ou 'm' para masculino.")
+
+while True:
+    estado_civil = input("Digite seu estado civil (s/c/v/d): ")
+    if estado_civil == 's' or estado_civil == 'c' or estado_civil == 'v' or estado_civil == 'd':
+        break
+    print("Estado civil inválido. Digite 's' para solteiro, 'c' para casado, 'v' para viúvo ou 'd' para divorciado.")
+
+print("Cadastro realizado com sucesso!")

@@ -1,0 +1,49 @@
+/* Lógico_1: */
+
+CREATE TABLE Bebes (
+    nome VARCHAR,
+    Nome_mae VARCHAR,
+    Altura FLOAT,
+    Medico CHAR,
+    data DATE,
+    hora NUMERIC,
+    id_bebe NUMERIC PRIMARY KEY,
+    fk_mae_prontuario NUMERIC
+);
+
+CREATE TABLE Medico (
+    crm NUMERIC PRIMARY KEY,
+    Nome CHAR,
+    Telefone_celular NUMERIC
+);
+
+CREATE TABLE mae (
+    nome CHAR,
+    prontuario NUMERIC PRIMARY KEY
+);
+
+CREATE TABLE faz_parto_Medico_Bebes_mae (
+    fk_Medico_crm NUMERIC,
+    fk_Bebes_id_bebe NUMERIC,
+    fk_mae_prontuario NUMERIC
+);
+ 
+ALTER TABLE Bebes ADD CONSTRAINT FK_Bebes_2
+    FOREIGN KEY (fk_mae_prontuario)
+    REFERENCES mae (prontuario)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE faz_parto_Medico_Bebes_mae ADD CONSTRAINT FK_faz_parto_Medico_Bebes_mae_1
+    FOREIGN KEY (fk_Medico_crm)
+    REFERENCES Medico (crm)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE faz_parto_Medico_Bebes_mae ADD CONSTRAINT FK_faz_parto_Medico_Bebes_mae_2
+    FOREIGN KEY (fk_Bebes_id_bebe)
+    REFERENCES Bebes (id_bebe)
+    ON DELETE NO ACTION;
+ 
+ALTER TABLE faz_parto_Medico_Bebes_mae ADD CONSTRAINT FK_faz_parto_Medico_Bebes_mae_3
+    FOREIGN KEY (fk_mae_prontuario)
+    REFERENCES mae (prontuario)
+    ON DELETE RESTRICT;
