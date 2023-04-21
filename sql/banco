@@ -1,10 +1,10 @@
 /* Lógico_1: */
 
 CREATE TABLE Bebes (
-    nome VARCHAR,
-    Nome_mae VARCHAR,
+    nome varchar(255),
+    Nome_mae varchar(255),
     Altura FLOAT,
-    Medico CHAR,
+    Medico CHAR(),
     data DATE,
     hora NUMERIC,
     id_bebe NUMERIC PRIMARY KEY,
@@ -13,12 +13,12 @@ CREATE TABLE Bebes (
 
 CREATE TABLE Medico (
     crm NUMERIC PRIMARY KEY,
-    Nome CHAR,
+    Nome varchar(255),
     Telefone_celular NUMERIC
 );
 
 CREATE TABLE mae (
-    nome CHAR,
+    nome varchar(255),
     prontuario NUMERIC PRIMARY KEY
 );
 
