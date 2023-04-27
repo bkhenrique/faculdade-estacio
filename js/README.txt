@@ -1,0 +1,1 @@
+Criterio de estudos de JavaScript 
