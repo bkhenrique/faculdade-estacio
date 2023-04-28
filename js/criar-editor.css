@@ -2,31 +2,20 @@
     margin: 0px;
     background-color: rgb(224, 209, 209);
 }
-p{
+h3{
     text-align: center;
-    font-size: x-large;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
 }
-
-.texto-codigo{
-    width: 700px;
-    height: auto;
-    margin-top: 20px;
-    background-color: black;
-    
-    color: rgb(203, 245, 50);
-}
-.centro-codigo{
-    display: flex;
-   justify-content: center;
-    
-    
-}
-.bloco-codigo{
-   width: max-content;
-   flex-direction: row;
-    
-}
-textarea {
-    text-align: left;
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fffdfdee;
+    padding: 10px;
+    height: 40px;
   }
-
+texto-footer{
+ font-size: 20px;
+  }
