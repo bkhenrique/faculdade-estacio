@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Js Modulos</title>
+    <link rel="stylesheet" href="./criar-editor.css">
 </head>
+
 <body>
-    <header><h1>Meu Js</h1></header>
+    <header>
+        <h1 style="text-align: center;">JavaScript</h1>
+    </header>
 
+    <p>Alguns conseitos para estudos furutos!</p>
+    <section class="centro-codigo">
+        <div class="bloco-codigo">
+            <textarea class="autosize texto-codigo" style="height: 50px;" name="" id="" cols="30" rows="10" readonly>
+        console.log('Bem Vindo ao inicio de JavaScript!')//aviso comum
+        console.error('esse e um suposto erro')//erro em vermelho
+        console.warn('esse é um warn') //alerta em amarelo
+        console.info('esse é um info') //esse é um informação 
+    </textarea>
+    <p>Variáveis</p>
+    <textarea class="autosize texto-codigo" style="height: 50px;" name="" id="" cols="30" rows="10" readonly>
+        1. `var`: essa é a maneira mais antiga de declarar uma variável em JavaScript.
+         O escopo dessa variável é global ou local, dependendo de onde ela é declarada. 
+         Ela pode ser reatribuída e redeclarada.
 
+        2. `let`: essa é uma nova maneira de declarar uma variável em JavaScript.
+         A variável declarada com let é acessível apenas dentro do bloco em que foi declarada.
+          Ela pode ser reatribuída, mas não pode ser redeclarada.
+        
+        3. `const`: essa é uma maneira de declarar uma variável em JavaScript que não pode ser reatribuída nem redeclarada.
+         O valor atribuído a ela é constante e não pode ser alterado.
+        
+        4. `undefined`: esse valor é atribuído a uma variável quando ela é declarada, mas ainda não foi atribuído um valor.
+        
+        5. `null`: esse valor é atribuído a uma variável quando você deseja que ela não tenha nenhum valor ou referência.
+    </textarea>
+    <p>Alguns conseitos para estudos furutos!</p>
+    <textarea class="autosize texto-codigo" style="height: 50px;" name="" id="" cols="30" rows="10" readonly>
+    txto
+    </textarea>
+    <p>Alguns conseitos para estudos furutos!</p>
+    <textarea class="autosize texto-codigo" style="height: 50px;" name="" id="" cols="30" rows="10" readonly>
+    txto
+    </textarea>
+    <p>Alguns conseitos para estudos furutos!</p>
+    <textarea class="autosize texto-codigo" style="height: 50px;" name="" id="" cols="30" rows="10" readonly>
+    txto
+    </textarea>
+    <p>Alguns conseitos para estudos furutos!</p>
+    <textarea class="autosize texto-codigo" style="height: 50px;" name="" id="" cols="30" rows="10" readonly>
+    txto
+    </textarea>
+ 
 
-    <script src="./JavaScript.js"></script>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.2/autosize.min.js"></script>
+<script>
+    autosize(document.querySelectorAll('.autosize'));
+  </script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.2/autosize.min.js"></script>
 </body>
 </html>
