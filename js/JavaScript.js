@@ -22,20 +22,19 @@ console.log(product['main color']);
 
 // JSON JavaScritp Object Notation
 
-const dog = {
-  name:'Shark',
-  age: 10,
-}
+// const dog = {
+//   name:'Shark',
+//   age: 10,
+// }
 
-const json = JSON.stringify(dog) //converte para JSON
-console.log(json)
+// const json = JSON.stringify(dog) //converte para JSON
+// console.log(json)
 
-const obj = JSON.parse(json) // convertendo json para usar quando vier de api  
-console.log(obj)
+// const obj = JSON.parse(json) // convertendo json para usar quando vier de api  
+// console.log(obj)
   
 
-//extrutura condicional
-
+//
 
 
 var editor = CodeMirror.fromTextArea(document.getElementById("html-editor"), {
