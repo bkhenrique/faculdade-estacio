@@ -1,7 +1,4 @@
 # estacio
-trabalhos feitos para faculdade
-
-
-clique no link
+estudo futuros
 
 https://bkhenrique.github.io/estacio/
