@@ -19,3 +19,34 @@ footer {
 texto-footer{
  font-size: 20px;
   }
+
+  /* container dom */
+  .container-dom{
+    display: flex;
+    justify-content: center;
+  }
+  .cont-1{
+    flex-direction: row;
+    
+  }
+  .h2-manipulado{
+    text-align: center;
+    border: 1px solid black;
+  }
+  .maipular-texto{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: rgba(252, 144, 21, 0.555);
+  }
+
+  /* area para digitalçao do texto manipulado */
+  .flutuante{
+    position: absolute;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+
+  }
+  .hiden{
+    visibility: hidden;
+  }
