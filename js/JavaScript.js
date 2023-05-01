@@ -18,6 +18,8 @@ const product = {
 console.log(product.name);
 console.log(product['name']);
 console.log(product['main color']);
+console.table(product);
+
 
 
 // JSON JavaScritp Object Notation

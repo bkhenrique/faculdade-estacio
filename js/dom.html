@@ -5,34 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipular DOM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./criar-editor.css">
 </head>
 <body>
     <header>
-        <h1>Manipular DOM</h1>
-        <ul>
-            <i class="fas fa-uikit    ">menu</i>
-            <i class="fas fa-uikit    ">menu2</i>
-            <i class="fas fa-uikit    ">menu3</i>
-            <i class="fas fa-uikit    ">menu4</i>
+        <h1 class="title">Manipular DOM</h1>
+        <ul class="dmenu-right">
+            <ui class="fas fa-uikit    ">menu</ui>
+            <ui class="fas fa-uikit    ">menu2</ui>
+            <ui class="fas fa-uikit    ">menu3</ui>
+            <ui class="fas fa-uikit    ">menu4</ui>
         </ul>
     </header>
     <div class="container-dom">
         
-        <div class="cont-1">
+        <div class="custon-modal">
         <p>Abaixo o texto manipulado</p>
-        <button class="maipular-texto">Clique aqui para Manipular Texto</button>
-        <h2 class="h2-manipulado">Texto</h2>
+        <button class="show-modal">Clique aqui para Manipular Texto</button>
+        <h2 class="h2-titulo">Texto</h2>
         </div>
-        <div class="flutuante hiden" id="areatexto">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <label for="floatingTextarea">Comments</label>
-            <input type="submit">
+        
+        <div class="flutuante hiden  " id="areatexto">
+            <div class="custon-modal-content card shadow p-4">
+                <label for="floatingTextarea">Digite seu texto...</label>
+                <textarea name="" id="area-comentario" cols="30" rows="10"></textarea>
+                
+                <button id="add-comentario">Enviar</button>
+              
             </div>
+        </div>
+            
 
         
 
     </div>
+
+    <!-- aqui um modal 2 -->
 
 
 
